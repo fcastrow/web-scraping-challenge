@@ -25,3 +25,6 @@ def scrape():
 	
 	#falling asleep, will continue tommorow on Fri 10/18/2019
 	
+	hemisphere_url = "https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars"
+	hemisphere_info = browser.visit(news_url)
+	bs_hemisphere = BeautifulSoup(browser.html, 'html.parser' )
