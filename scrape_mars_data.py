@@ -38,4 +38,4 @@ def scrape():
 		href_attribute = anchor_tag["href"]
 		item_list.append({"", "anchor_tag":hemisphere_url + href_attribute})
 		
-item_list
+	return item_list
