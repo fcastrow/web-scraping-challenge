@@ -26,5 +26,16 @@ def scrape():
 	#falling asleep, will continue tommorow on Fri 10/18/2019
 	
 	hemisphere_url = "https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars"
-	hemisphere_info = browser.visit(news_url)
+	hemisphere_info = browser.visit(hemisphere_url)
 	bs_hemisphere = BeautifulSoup(browser.html, 'html.parser' )
+	
+	#watched Astros kick the Yankees ass in their own stadium last night
+
+	hemisphere_items = hemisphere_url.find_all("div",class_="item")
+	item_list = "[]"
+	for item in item_list:
+		anchor_tag = item_find("a")
+		href_attribute = anchor_tag["href"]
+		item_list.append({"", "anchor_tag":hemisphere_url + href_attribute})
+		
+item_list
