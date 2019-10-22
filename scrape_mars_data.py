@@ -36,6 +36,6 @@ def scrape():
 	for item in item_list:
 		anchor_tag = item_find("a")
 		href_attribute = anchor_tag["href"]
-		item_list.append({"", "anchor_tag":hemisphere_url + href_attribute})
+		item_list.append({"", "anchor_tag:" + hemisphere_url + href_attribute})
 		
 	return item_list
